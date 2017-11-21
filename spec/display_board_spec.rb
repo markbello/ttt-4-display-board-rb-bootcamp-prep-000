@@ -182,11 +182,11 @@ describe "#display_board in 'lib/display_board.rb" do
       output = capture_puts{ display_board(board) } if defined?(display_board)
       rows = output.split("\n")
 
-      eOpect(rows[0]).to eq(" O | O | O ")
-      eOpect(rows[1]).to eq("-----------")
-      eOpect(rows[2]).to eq(" O | O | O ")
-      eOpect(rows[3]).to eq("-----------")
-      eOpect(rows[4]).to eq(" O | O | O ")
+      expect(rows[0]).to eq(" O | O | O ")
+      expect(rows[1]).to eq("-----------")
+      expect(rows[2]).to eq(" O | O | O ")
+      expect(rows[3]).to eq("-----------")
+      expect(rows[4]).to eq(" O | O | O ")
       # Hint: You should be able to copy the code in the previous it example
       # and make a few simple edits to convert the previous example to this
       # example's situation.
